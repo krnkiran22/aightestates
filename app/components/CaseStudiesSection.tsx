@@ -87,7 +87,7 @@ export default function CaseStudiesSection() {
                 {/* Left: Icon and Title */}
                 <div className="lg:col-span-5">
                   <div className="flex items-start space-x-4">
-                    <div className="w-14 h-14 rounded-xl bg-brand-orange/10 flex items-center justify-center text-brand-orange group-hover:bg-brand-orange group-hover:text-white transition-all flex-shrink-0">
+                    <div className="w-14 h-14 rounded-xl bg-brand-orange/10 flex items-center justify-center text-brand-orange group-hover:bg-brand-orange group-hover:text-white transition-all shrink-0">
                       {study.icon}
                     </div>
                     <div>
@@ -116,7 +116,7 @@ export default function CaseStudiesSection() {
                   <ul className="space-y-3">
                     {study.results.map((result, resultIndex) => (
                       <li key={resultIndex} className="flex items-center text-white">
-                        <div className="w-2 h-2 bg-brand-orange rounded-full mr-3 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-brand-orange rounded-full mr-3 shrink-0"></div>
                         {result}
                       </li>
                     ))}

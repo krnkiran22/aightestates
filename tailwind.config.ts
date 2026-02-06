@@ -16,12 +16,9 @@ const config: Config = {
           muted: "#A0A0A0",
         },
       },
-      backgroundImage: {
-        'glass-gradient': 'linear-gradient(to bottom right, rgba(255, 87, 34, 0.05), rgba(13, 13, 13, 0))',
-      },
       fontFamily: {
-        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
-        display: ['var(--font-manrope)', 'var(--font-inter)', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-inter)', 'Inter', 'system-ui', 'sans-serif'],
+        display: ['var(--font-manrope)', 'Manrope', 'Inter', 'system-ui', 'sans-serif'],
       },
     },
   },

@@ -21,7 +21,7 @@ export default function HeroSection() {
                 {[1, 2, 3, 4].map((i) => (
                   <div
                     key={i}
-                    className="w-10 h-10 rounded-full border-2 border-brand-black bg-gradient-to-br from-brand-orange to-orange-700 flex items-center justify-center text-white text-xs font-bold"
+                    className="w-10 h-10 rounded-full border-2 border-brand-black bg-linear-to-br from-brand-orange to-orange-700 flex items-center justify-center text-white text-xs font-bold"
                   >
                     {i * 10}+
                   </div>
@@ -87,8 +87,8 @@ export default function HeroSection() {
           >
             <div className="relative z-10">
               {/* Abstract graphic with percentage */}
-              <div className="aspect-square rounded-3xl bg-gradient-to-br from-brand-orange to-orange-700 p-8 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-tr from-black/20 to-transparent"></div>
+              <div className="aspect-square rounded-3xl bg-linear-to-br from-brand-orange to-orange-700 p-8 relative overflow-hidden">
+                <div className="absolute inset-0 bg-linear-to-tr from-black/20 to-transparent"></div>
                 <div className="relative z-10 h-full flex items-center justify-center">
                   <div className="text-center text-white">
                     <motion.div
