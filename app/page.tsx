@@ -1,6 +1,7 @@
 import Navigation from './components/Navigation';
 import Hero from './components/HeroSection';
 import ServiceTable from './components/ServiceTable';
+import Roadblocks from './components/Roadblocks';
 import ServicesList from './components/ServicesList';
 import ChallengesSection from './components/ChallengesSection';
 import ServicesSection from './components/ServicesSection';
@@ -13,7 +14,7 @@ export default function Home() {
     <main className="bg-[#0D0D0D] min-h-screen">
       <Navigation />
       <Hero />
-      <ServiceTable />
+      <Roadblocks />
       <ServicesList />
       <ChallengesSection />
       <ServicesSection />

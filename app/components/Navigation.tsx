@@ -56,7 +56,7 @@ export default function Navigation() {
           <div className="flex items-center space-x-4">
             <a
               href="#kontakt"
-              className="hidden md:inline-flex items-center bg-[#FF5722] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#E64A19] transition-all hover:scale-105 text-sm"
+              className="hidden md:inline-flex items-center bg-[#FF5722] text-white px-8 py-3.5 rounded-full font-semibold hover:bg-[#E64A19] transition-all hover:scale-105 text-sm"
             >
               Kontakt
             </a>
