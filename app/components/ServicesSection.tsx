@@ -52,8 +52,8 @@ const services: Service[] = [
 
 export default function ServicesSection() {
   return (
-    <section className="py-32 bg-brand-surface">
-      <div className="container mx-auto px-6">
+    <section className="py-32 bg-[#0D0D0D]">
+      <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -82,15 +82,15 @@ export default function ServicesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="p-10 rounded-3xl bg-[#0D0D0D] border border-white/5 hover:border-[#FF5722]/50 transition-all group relative overflow-hidden"
+              className="p-10 rounded-3xl bg-brand-black border border-white/5 hover:border-brand-orange/50 transition-all group relative overflow-hidden"
             >
               {/* Highlight Badge */}
-              <div className="absolute top-6 right-6 bg-[#FF5722] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+              <div className="absolute top-6 right-6 bg-brand-orange text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
                 {service.highlight}
               </div>
 
               {/* Icon */}
-              <div className="w-14 h-14 rounded-full bg-[#FF5722]/10 flex items-center justify-center text-[#FF5722] mb-8 group-hover:bg-[#FF5722] group-hover:text-white transition-all">
+              <div className="w-14 h-14 rounded-full bg-brand-orange/10 flex items-center justify-center text-brand-orange mb-8 group-hover:bg-brand-orange group-hover:text-white transition-all">
                 {service.icon}
               </div>
               
@@ -123,7 +123,7 @@ export default function ServicesSection() {
               </button>
 
               {/* Hover Effect Background */}
-              <div className="absolute inset-0 bg-linear-to-r from-[#FF5722]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+              <div className="absolute inset-0 bg-linear-to-r from-brand-orange/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
             </motion.div>
           ))}
         </div>

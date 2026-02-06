@@ -10,13 +10,13 @@ const services = [
 
 export default function ServicesList() {
   return (
-    <section className="py-32 bg-brand-black">
-      <div className="container mx-auto px-6">
+    <section className="py-32 bg-[#141414]">
+      <div className="max-w-7xl mx-auto px-6">
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-brand-orange uppercase tracking-widest text-sm font-bold mb-12"
+          className="text-brand-orange uppercase tracking-widest text-sm font-bold mb-20"
         >
           Unsere Lösungen
         </motion.h2>

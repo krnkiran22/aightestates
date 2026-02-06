@@ -1,5 +1,6 @@
 import Navigation from './components/Navigation';
-import HeroSection from './components/HeroSection';
+import Hero from './components/HeroSection';
+import ServiceTable from './components/ServiceTable';
 import ServicesList from './components/ServicesList';
 import ChallengesSection from './components/ChallengesSection';
 import ServicesSection from './components/ServicesSection';
@@ -9,9 +10,10 @@ import Footer from './components/Footer';
 
 export default function Home() {
   return (
-    <main className="bg-brand-black min-h-screen">
+    <main className="bg-[#0D0D0D] min-h-screen">
       <Navigation />
-      <HeroSection />
+      <Hero />
+      <ServiceTable />
       <ServicesList />
       <ChallengesSection />
       <ServicesSection />

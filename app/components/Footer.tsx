@@ -24,8 +24,8 @@ const serviceLinks: FooterLink[] = [
 
 export default function Footer() {
   return (
-    <footer className="bg-brand-black border-t border-white/10">
-      <div className="container mx-auto px-6">
+    <footer className="bg-[#0D0D0D] border-t border-white/10">
+      <div className="max-w-7xl mx-auto px-6">
         <div className="py-16">
           {/* Main Footer Content */}
           <div className="grid lg:grid-cols-4 gap-12 mb-12">

@@ -55,8 +55,8 @@ const itemVariants = {
 
 export default function ChallengesSection() {
   return (
-    <section className="py-24 bg-brand-black">
-      <div className="container mx-auto px-6">
+    <section className="py-24 bg-[#141414]">
+      <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -86,11 +86,11 @@ export default function ChallengesSection() {
             <motion.div
               key={index}
               variants={itemVariants}
-              className="bg-[#0D0D0D] p-8 hover:bg-[#1A1A1A] transition-all duration-500 group"
+              className="bg-brand-black p-8 hover:bg-brand-surface transition-all duration-500 group"
             >
               {/* Icon */}
-              <div className="w-10 h-10 border border-[#FF5722]/30 rounded flex items-center justify-center mb-6 group-hover:bg-[#FF5722] group-hover:border-[#FF5722] transition-all">
-                <div className="text-[#FF5722] group-hover:text-white transition-colors">
+              <div className="w-10 h-10 border border-brand-orange/30 rounded flex items-center justify-center mb-6 group-hover:bg-brand-orange group-hover:border-brand-orange transition-all">
+                <div className="text-brand-orange group-hover:text-white transition-colors">
                   {challenge.icon}
                 </div>
               </div>

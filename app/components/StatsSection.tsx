@@ -62,10 +62,10 @@ const testimonials: Testimonial[] = [
 
 export default function StatsSection() {
   return (
-    <section className="py-32 bg-brand-black">
-      <div className="container mx-auto px-6">
+    <section className="py-32 bg-[#0D0D0D]">
+      <div className="max-w-7xl mx-auto px-6">
         {/* Stats Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-32">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-16 mb-32">
           {stats.map((stat, index) => (
             <motion.div
               key={index}
@@ -75,13 +75,13 @@ export default function StatsSection() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="flex flex-col items-start"
             >
-              <div className="text-6xl lg:text-7xl font-black text-[#FF5722] mb-4 leading-none">
+              <div className="text-6xl lg:text-7xl font-black text-brand-orange mb-4 leading-none">
                 {stat.number}
               </div>
               <div className="text-xl font-bold text-white mb-2 leading-snug">
                 {stat.label}
               </div>
-              <div className="text-[#A0A0A0] text-base leading-relaxed">
+              <div className="text-brand-muted text-base leading-relaxed">
                 {stat.description}
               </div>
             </motion.div>
@@ -106,18 +106,18 @@ export default function StatsSection() {
         </motion.div>
 
         {/* Testimonials */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-20">
-          {testimonials.map((testimonial, index) => (
+        <div className="grid lg:grid-cols-2 gap-10 mb-20">
+          {testimonials.slice(0, 2).map((testimonial, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="bg-[#1A1A1A] rounded-2xl p-8 border border-white/5 hover:border-[#FF5722]/30 transition-all"
+              className="bg-[#141414] rounded-2xl p-12 border border-white/5 hover:border-[#FF5722]/30 transition-all"
             >
               {/* Quote Icon */}
-              <Quote className="w-10 h-10 text-[#FF5722] mb-4" />
+              <Quote className="w-14 h-14 text-[#FF5722] mb-6" />
               
               {/* Quote */}
               <div className="mb-6">

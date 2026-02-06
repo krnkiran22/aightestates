@@ -30,7 +30,7 @@ export default function Navigation() {
 
   return (
     <nav className="fixed top-0 w-full bg-black/50 backdrop-blur-md border-b border-white/10 z-50 transition-all duration-300">
-      <div className="container mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between gap-8" style={{ height: '80px' }}>
           {/* Logo - Left */}
           <Link href="/" className="flex items-center">
