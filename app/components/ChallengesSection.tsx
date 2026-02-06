@@ -55,20 +55,20 @@ const itemVariants = {
 
 export default function ChallengesSection() {
   return (
-    <section className="py-24 bg-brand-surface/30">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-24 bg-brand-black">
+      <div className="container mx-auto px-6">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-20"
         >
-          <h2 className="text-3xl font-bold mb-16 text-center">
-            Herausforderungen, die wir <span className="text-brand-orange">lösen</span>
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
+            Herausforderungen, die wir <span className="text-[#FF5722]">lösen</span>
           </h2>
-          <p className="text-xl text-brand-muted max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-[#A0A0A0] max-w-3xl mx-auto leading-relaxed">
             Immobilienprofis verbringen täglich Stunden mit repetitiven Aufgaben, 
             während wichtige strategische Arbeit liegen bleibt. Zeit für eine Veränderung.
           </p>
@@ -86,11 +86,11 @@ export default function ChallengesSection() {
             <motion.div
               key={index}
               variants={itemVariants}
-              className="bg-brand-black p-8 hover:bg-brand-surface transition-all duration-500 group"
+              className="bg-[#0D0D0D] p-8 hover:bg-[#1A1A1A] transition-all duration-500 group"
             >
               {/* Icon */}
-              <div className="w-10 h-10 border border-brand-orange/30 rounded flex items-center justify-center mb-6 group-hover:bg-brand-orange group-hover:border-brand-orange transition-all">
-                <div className="text-brand-orange group-hover:text-white transition-colors">
+              <div className="w-10 h-10 border border-[#FF5722]/30 rounded flex items-center justify-center mb-6 group-hover:bg-[#FF5722] group-hover:border-[#FF5722] transition-all">
+                <div className="text-[#FF5722] group-hover:text-white transition-colors">
                   {challenge.icon}
                 </div>
               </div>
@@ -100,7 +100,7 @@ export default function ChallengesSection() {
                 {challenge.title}
               </h3>
               
-              <p className="text-brand-muted text-sm leading-relaxed">
+              <p className="text-[#A0A0A0] text-sm leading-relaxed">
                 {challenge.description}
               </p>
             </motion.div>
@@ -113,12 +113,12 @@ export default function ChallengesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-center mt-16"
+          className="text-center mt-20"
         >
           <p className="text-xl text-white mb-8">
             Schluss mit der Zeitverschwendung. Lassen Sie uns gemeinsam Ihre Prozesse optimieren.
           </p>
-          <a href="#consulting" className="inline-block bg-brand-orange text-white px-8 py-4 rounded-xl font-bold hover:scale-105 transition-transform">
+          <a href="#consulting" className="inline-block bg-[#FF5722] text-white px-8 py-4 rounded-xl font-bold hover:scale-105 transition-transform">
             Kostenloses Beratungsgespräch
           </a>
         </motion.div>

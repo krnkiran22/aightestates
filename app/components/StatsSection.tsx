@@ -62,10 +62,10 @@ const testimonials: Testimonial[] = [
 
 export default function StatsSection() {
   return (
-    <section className="py-24 bg-brand-black">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-32 bg-brand-black">
+      <div className="container mx-auto px-6">
         {/* Stats Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-32">
           {stats.map((stat, index) => (
             <motion.div
               key={index}
@@ -73,15 +73,15 @@ export default function StatsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="text-center"
+              className="flex flex-col items-start"
             >
-              <div className="text-5xl lg:text-6xl font-bold text-brand-orange mb-2">
+              <div className="text-6xl lg:text-7xl font-black text-[#FF5722] mb-4 leading-none">
                 {stat.number}
               </div>
-              <div className="text-xl font-semibold text-white mb-2">
+              <div className="text-xl font-bold text-white mb-2 leading-snug">
                 {stat.label}
               </div>
-              <div className="text-brand-muted text-sm leading-relaxed">
+              <div className="text-[#A0A0A0] text-base leading-relaxed">
                 {stat.description}
               </div>
             </motion.div>
@@ -94,19 +94,19 @@ export default function StatsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-20"
         >
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Vertrauen durch <span className="text-brand-orange">Expertise</span>
+            Vertrauen durch <span className="text-[#FF5722]">Expertise</span>
           </h2>
-          <p className="text-xl text-brand-muted max-w-3xl mx-auto mb-12">
+          <p className="text-xl text-[#A0A0A0] max-w-3xl mx-auto mb-12">
             Unsere Kunden sprechen für sich. Erfahren Sie, wie andere Immobilienprofis 
             mit unseren KI-Lösungen ihre Produktivität gesteigert haben.
           </p>
         </motion.div>
 
         {/* Testimonials */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid lg:grid-cols-3 gap-8 mb-20">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
@@ -114,10 +114,10 @@ export default function StatsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="bg-brand-surface rounded-2xl p-8 border border-white/5 hover:border-brand-orange/30 transition-all"
+              className="bg-[#1A1A1A] rounded-2xl p-8 border border-white/5 hover:border-[#FF5722]/30 transition-all"
             >
               {/* Quote Icon */}
-              <Quote className="w-10 h-10 text-brand-orange mb-4" />
+              <Quote className="w-10 h-10 text-[#FF5722] mb-4" />
               
               {/* Quote */}
               <div className="mb-6">
@@ -128,14 +128,14 @@ export default function StatsSection() {
               
               {/* Author */}
               <div className="flex items-center">
-                <div className="w-12 h-12 bg-linear-to-r from-brand-orange to-orange-700 rounded-full flex items-center justify-center text-white font-bold mr-4 text-sm">
+                <div className="w-12 h-12 bg-linear-to-r from-[#FF5722] to-orange-700 rounded-full flex items-center justify-center text-white font-bold mr-4 text-sm">
                   {testimonial.author.split(' ').map(name => name[0]).join('')}
                 </div>
                 <div>
                   <div className="text-white font-semibold">
                     {testimonial.author}
                   </div>
-                  <div className="text-brand-muted text-sm">
+                  <div className="text-[#A0A0A0] text-sm">
                     {testimonial.role}, {testimonial.company}
                   </div>
                 </div>
@@ -152,16 +152,16 @@ export default function StatsSection() {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <p className="text-brand-muted text-sm mb-8 uppercase tracking-wider">
+          <p className="text-[#A0A0A0] text-sm mb-8 uppercase tracking-wider">
             Vertrauen von führenden Immobilienunternehmen
           </p>
           <div className="flex flex-wrap justify-center items-center gap-12 opacity-50">
             {Array.from({ length: 6 }).map((_, index) => (
               <div
                 key={index}
-                className="w-32 h-16 bg-brand-surface rounded-lg flex items-center justify-center border border-gray-800 hover:border-brand-orange/30 transition-colors"
+                className="w-32 h-16 bg-[#1A1A1A] rounded-lg flex items-center justify-center border border-white/10 hover:border-[#FF5722]/30 transition-colors"
               >
-                <div className="text-brand-muted text-sm font-medium">
+                <div className="text-[#A0A0A0] text-sm font-medium">
                   Partner {index + 1}
                 </div>
               </div>

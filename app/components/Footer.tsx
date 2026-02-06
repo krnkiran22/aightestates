@@ -25,36 +25,36 @@ const serviceLinks: FooterLink[] = [
 export default function Footer() {
   return (
     <footer className="bg-brand-black border-t border-white/10">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="container mx-auto px-6">
         <div className="py-16">
           {/* Main Footer Content */}
           <div className="grid lg:grid-cols-4 gap-12 mb-12">
             {/* Brand Column */}
             <div className="lg:col-span-1">
               <div className="font-display font-bold text-2xl text-white mb-4">
-                aight <span className="text-brand-orange">estates</span>
+                aight <span className="text-[#FF5722]">estates</span>
               </div>
-              <p className="text-brand-muted mb-6 leading-relaxed">
+              <p className="text-[#A0A0A0] mb-6 leading-relaxed">
                 Ihr strategischer Partner für KI-gestützte Automatisierung in der Immobilienbranche.
               </p>
               <div className="flex space-x-4">
                 <a
                   href="#"
-                  className="w-10 h-10 rounded-full bg-brand-surface border border-white/10 flex items-center justify-center text-brand-muted hover:text-brand-orange hover:border-brand-orange/50 transition-all"
+                  className="w-10 h-10 rounded-full bg-[#1A1A1A] border border-white/10 flex items-center justify-center text-[#A0A0A0] hover:text-[#FF5722] hover:border-[#FF5722]/50 transition-all"
                   aria-label="Twitter"
                 >
                   <Twitter size={18} />
                 </a>
                 <a
                   href="#"
-                  className="w-10 h-10 rounded-full bg-brand-surface border border-white/10 flex items-center justify-center text-brand-muted hover:text-brand-orange hover:border-brand-orange/50 transition-all"
+                  className="w-10 h-10 rounded-full bg-[#1A1A1A] border border-white/10 flex items-center justify-center text-[#A0A0A0] hover:text-[#FF5722] hover:border-[#FF5722]/50 transition-all"
                   aria-label="LinkedIn"
                 >
                   <Linkedin size={18} />
                 </a>
                 <a
                   href="#"
-                  className="w-10 h-10 rounded-full bg-brand-surface border border-white/10 flex items-center justify-center text-brand-muted hover:text-brand-orange hover:border-brand-orange/50 transition-all"
+                  className="w-10 h-10 rounded-full bg-[#1A1A1A] border border-white/10 flex items-center justify-center text-[#A0A0A0] hover:text-[#FF5722] hover:border-[#FF5722]/50 transition-all"
                   aria-label="Instagram"
                 >
                   <Instagram size={18} />
@@ -70,7 +70,7 @@ export default function Footer() {
                   <li key={link.href}>
                     <a
                       href={link.href}
-                      className="text-brand-muted hover:text-brand-orange transition-colors text-sm"
+                      className="text-[#A0A0A0] hover:text-[#FF5722] transition-colors text-sm"
                     >
                       {link.label}
                     </a>
@@ -87,7 +87,7 @@ export default function Footer() {
                   <li key={link.href}>
                     <a
                       href={link.href}
-                      className="text-brand-muted hover:text-brand-orange transition-colors text-sm"
+                      className="text-[#A0A0A0] hover:text-[#FF5722] transition-colors text-sm"
                     >
                       {link.label}
                     </a>
@@ -99,27 +99,27 @@ export default function Footer() {
             {/* Contact */}
             <div>
               <h4 className="text-white font-semibold mb-4 text-lg">Kontakt</h4>
-              <div className="space-y-4 text-brand-muted text-sm">
+              <div className="space-y-4 text-[#A0A0A0] text-sm">
                 <div className="flex items-start">
-                  <Mail className="w-5 h-5 mr-3 text-brand-orange shrink-0 mt-0.5" />
+                  <Mail className="w-5 h-5 mr-3 text-[#FF5722] shrink-0 mt-0.5" />
                   <a
                     href="mailto:info@aight-estates.com"
-                    className="hover:text-brand-orange transition-colors"
+                    className="hover:text-[#FF5722] transition-colors"
                   >
                     info@aight-estates.com
                   </a>
                 </div>
                 <div className="flex items-start">
-                  <Phone className="w-5 h-5 mr-3 text-brand-orange shrink-0 mt-0.5" />
+                  <Phone className="w-5 h-5 mr-3 text-[#FF5722] shrink-0 mt-0.5" />
                   <a
                     href="tel:+491234567890"
-                    className="hover:text-brand-orange transition-colors"
+                    className="hover:text-[#FF5722] transition-colors"
                   >
                     +49 (0) 123 456 789
                   </a>
                 </div>
                 <div className="flex items-start">
-                  <MapPin className="w-5 h-5 mr-3 text-brand-orange shrink-0 mt-0.5" />
+                  <MapPin className="w-5 h-5 mr-3 text-[#FF5722] shrink-0 mt-0.5" />
                   <div>
                     Musterstraße 123<br />
                     12345 Berlin, Deutschland
@@ -131,25 +131,25 @@ export default function Footer() {
 
           {/* Bottom Bar */}
           <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="text-brand-muted text-sm">
+            <div className="text-[#A0A0A0] text-sm">
               © 2024 aight estates. Alle Rechte vorbehalten.
             </div>
             <div className="flex flex-wrap justify-center gap-6 text-sm">
               <a
                 href="#datenschutz"
-                className="text-brand-muted hover:text-brand-orange transition-colors"
+                className="text-[#A0A0A0] hover:text-[#FF5722] transition-colors"
               >
                 Datenschutz
               </a>
               <a
                 href="#impressum"
-                className="text-brand-muted hover:text-brand-orange transition-colors"
+                className="text-[#A0A0A0] hover:text-[#FF5722] transition-colors"
               >
                 Impressum
               </a>
               <a
                 href="#agb"
-                className="text-brand-muted hover:text-brand-orange transition-colors"
+                className="text-[#A0A0A0] hover:text-[#FF5722] transition-colors"
               >
                 AGB
               </a>
